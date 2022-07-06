@@ -1,0 +1,122 @@
+body{
+    font-family: Manrope, sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 800px){
+
+    #banner{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        a{
+            color: #0074ff;
+            transition: 0.2s ease;
+            &:hover{
+                color: #1e00ff;
+            }
+        }
+    }
+
+    #area{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    .item{
+        width: 320px;
+        padding: 15px;
+        border-radius: 10px;
+        transition: 0.2s ease;
+        .img{
+            width: 320px;
+            height: 160px;
+            border-radius: 10px;
+            background-color: rgba(black, 0.1);
+            background-size: cover;
+        }
+        .expo{
+            margin-top: 10px;
+            text-align: center;
+            h1{
+                margin: 5px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            p{
+                margin: 0;
+                font-size: 13px;
+            }
+        }
+        &:hover{
+            background: rgba(black, 0.05);
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    #banner{
+        width: 90vw;
+        height: 100px;
+        margin: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        a{
+            color: #0074ff;
+            transition: 0.2s ease;
+            &:hover{
+                color: #1e00ff;
+            }
+        }
+    }
+
+    #area{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item{
+        width: 90vw;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        transition: 0.2s ease;
+        .img{
+            width: 90vw;
+            height: 45vw;
+            border-radius: 10px;
+            background-color: rgba(black, 0.1);
+            background-size: cover;
+        }
+        .expo{
+            margin-top: 10px;
+            text-align: center;
+            h1{
+                margin: 5px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            p{
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+        &:hover{
+            background: rgba(black, 0.05);
+        }
+    }
+}
