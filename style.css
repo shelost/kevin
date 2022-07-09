@@ -57,6 +57,8 @@ a {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.1);
     background-size: cover;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .item .expo {
     margin-top: 10px;
@@ -77,6 +79,8 @@ a {
     margin: 5px;
     font-size: 16px;
     font-weight: 700;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .item .expo .name span {
     margin-left: 2px;
@@ -88,8 +92,12 @@ a {
     margin: 0;
     font-size: 13px;
   }
-  .item:hover {
-    background: rgba(0, 0, 0, 0.05);
+  .item:hover .img {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  .item:hover h1 {
+    letter-spacing: 0.5px;
   }
 }
 

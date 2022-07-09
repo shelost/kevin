@@ -43,6 +43,7 @@ a{
             border-radius: 10px;
             background-color: rgba(black, 0.1);
             background-size: cover;
+            transition: 0.2s ease;
         }
         .expo{
             margin-top: 10px;
@@ -55,6 +56,7 @@ a{
                     margin: 5px;
                     font-size: 16px;
                     font-weight: 700;
+                    transition: 0.2s ease;
                 }
                 span{
                     margin-left: 2px;
@@ -69,7 +71,13 @@ a{
             }
         }
         &:hover{
-            background: rgba(black, 0.05);
+            //background: rgba(black, 0.05);
+            .img{
+                transform: scale(1.03);
+            }
+            h1{
+                letter-spacing: 0.5px;
+            }
         }
     }
 }
